@@ -19,6 +19,7 @@ RUN apt-get update \
         python3-pip \
         python3-venv \
         python-is-python3 \
+        libcudart11.0
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* 
 
 RUN curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \
